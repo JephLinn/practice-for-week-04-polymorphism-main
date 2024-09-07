@@ -7,6 +7,8 @@ class Student extends Person {
     this.GPA = GPA;
   }
 
+  
+
   static compareGPA(student1, student2) {
     if (student1.GPA > student2.GPA) {
       return `${student1.firstName} ${student1.lastName} has the higher GPA.`;
@@ -15,6 +17,10 @@ class Student extends Person {
     } else {
       return "Both students have the same GPA";
     }
+  }
+
+  introduce() {
+    return `Hello. I am ${this.firstName} ${this.lastName}, and I study ${this.major}.`
   }
 }
 
